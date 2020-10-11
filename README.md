@@ -46,6 +46,6 @@ And thankfully, there is now a VSCode extension thanks to Simon and Jake:
 | ------------- | ------------- | ------------- | ------------- |
 | Trongate Add Floating Cents Function (Two Variables Passed) | tgafc + &lt;Tab&gt; + your amount in dollars | `number_format($your_amount, 2);` | 15 |
 | Trongate Anchor Function | tga + <Tab> + your link | anchor('your_link'); | 7 |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| Trongate Class | tgc + <Tab> + Enter Your Classname + <Tab> + Enter your Class statements | class MyClass extends Trongate {<br>&nbsp;&nbsp;&nbsp;Your code goes here.<br>} | 25 |
+| Trongate Config Array Assignment | tgcaa + <Tab> + your first variable name + <Tab> + your second variable name | config[$your_variable1] = $your_variable2; | 8 |
+| Trongate Data Array Assignment | tgda + <Tab> + your array name + <Tab> + your function name | "$your_arrayName = 'your_function_name';" | 2 |
