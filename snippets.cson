@@ -1,0 +1,26 @@
+{
+'.text.html.php':
+  'Trongate Add Floating Cents Function (Two Variables Passed)':
+    'prefix': 'tgafc'
+    'body': 'number_format($${1:dollar_amount}, 2);$0'
+    'description': '$number_format($your_dollar_amount, 2);'
+
+  'Trongate Anchor Function':
+    'prefix': 'tga'
+    'body': "anchor('${1:your_link}');$0"
+    'description': "anchor('your_link');"
+
+  'Trongate Class':
+    'prefix': 'tgc'
+    'body': """
+    class ${1:YourClass} extends Trongate {
+       ${2:Your code goes here};$0
+    }
+    """
+    'description': 'class YourClass extends Trongate \\{ Your code goes here; \\}'
+
+  'Trongate Config Array Assignment':
+    'prefix': 'tgcaa'
+    'body': 'config[$${1:your_variable11}] = $${2:your_variable2};$0'
+    'description': 'config[$your_variable1] = $your_variable2;'
+}
