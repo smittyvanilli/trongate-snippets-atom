@@ -49,8 +49,8 @@ And thankfully, there is now a VSCode extension thanks to Simon and Jake:
 | Trongate Class | tgc +  + Enter Your Classname + &lt;Tab&gt; + Enter your Class statements | class MyClass extends Trongate {<br>&nbsp;&nbsp;&nbsp;Your code goes here.<br>} | 25 |
 | Trongate Config Array Assignment | tgcaa + &lt;Tab&gt; + your first variable name + &lt;Tab&gt; + your second variable name | `config[$your_variable1] = $your_variable2;` | 8 |
 | Trongate Data Array Assignment | tgda + &lt;Tab&gt; + your array name + &lt;Tab&gt; + your function name | `$your_arrayName = 'your_function_name';` | 2 |  
-| Trongate Echo Current Url Function | tgecu + <Tab> Press <Tab> to move the cursor after the semicolon | `echo current_url(your url);` | 14 |  
-| Trongate Echo Form Input Function | tgefi + <Tab> + form name + <Ctrl + Enter> | `echo form_input('$form_name');` | 15 |  
-| Trongate Echo Form Label Function  | tgefl + <Tab> + your label + <Ctrl + Enter> | `echo form_input('form_label');` | 14 |  
-| Trongate Echo Form Submit Function | tgefs + <Tab> + <Ctrl + Enter> | `echo form_submit('submit', 'Submit');` | 31 |
-| Trongate Form Textarea Function | tgeft + <Tab> + your text | `echo form_textarea('your_text');` | 17 |
+| Trongate Echo Current Url Function | tgecu + &lt;Tab&gt; Press &lt;Tab&gt; to move the cursor after the semicolon | `echo current_url(your url);` | 14 |  
+| Trongate Echo Form Input Function | tgefi + &lt;Tab&gt; + form name + <Ctrl + Enter> | `echo form_input('$form_name');` | 15 |  
+| Trongate Echo Form Label Function  | tgefl + &lt;Tab&gt; + your label + <Ctrl + Enter> | `echo form_input('form_label');` | 14 |  
+| Trongate Echo Form Submit Function | tgefs + &lt;Tab&gt; + <Ctrl + Enter> | `echo form_submit('submit', 'Submit');` | 31 |
+| Trongate Form Textarea Function | tgeft + &lt;Tab&gt; + your text | `echo form_textarea('your_text');` | 17 |
