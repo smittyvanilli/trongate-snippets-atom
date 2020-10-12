@@ -22,18 +22,26 @@ Add snippets to the first documentation ~12h #repo @smittyvanilli
 Check for pull requests ~1h #repo @smittyvanilli  
 Add snippets to the first documentation ~12h #repo @smittyvanilli    
 
-    Fix README.md file for missing snippets
 
 ## In Progress
 
-Fix README.md file for missing snippets
+Check for pull requests  
+Work on the 2nd five snippets
+Add snippets to the first documentation
+
 
 ## Done ✓
 
 [✓] Create my first TODO.md  
 [✓] Add readme.html link to stevenmilley.com
+[✓] Fix tabs in README.MD
 
 ### First five snippets ✓
 [✓] Create the first 5 Snippets and update documentation  
 [✓] Add snippets to the first documentation
 [✓] Fixed documentation for first five snippets
+
+### Second five snippets ✓
+[ ] Check for pull requests  
+[ ] Work on the 2nd five snippets
+[ ] Add snippets to the first documentation
