@@ -23,4 +23,34 @@
     'prefix': 'tgcaa'
     'body': 'config[$${1:your_variable11}] = $${2:your_variable2};$0'
     'description': 'config[$your_variable1] = $your_variable2;'
+
+  'Trongate Data Array Assignment':
+    'prefix': 'tgda'
+    'body': "$${1:your_arrayName} = '${2:your_function_name}';$0"
+    'description': "$your_arrayName = 'your_function_name';"
+
+  'Trongate Echo Current Url Function':
+    'prefix': 'tgecu'
+    'body': 'echo current_url(${1:your_url});$0'
+    'description': 'echo current_url(your url);'
+
+  'Trongate Echo Form Input Function':
+    'prefix': 'tgefi'
+    'body': "echo form_input('${1:form_name}');$0"
+    'description': "echo form_input('$form_name');"
+
+  'Trongate Echo Form Label Function':
+    'prefix': 'tgefl'
+    'body': "echo form_input('${1:form_label}');$0"
+    'description': "echo form_input('form_label');"
+
+  'Trongate Echo Form Submit Function':
+    'prefix': 'tgefs'
+    'body': "echo form_submit('submit', 'Submit');$0"
+    'description': "echo form_submit('submit', 'Submit');"
+
+  'Trongate Form Textarea Function':
+    'prefix': 'tgeft'
+    'body': "echo form_textarea('${1:your_text}');$0"
+    'description': "echo form_textarea('your_text');"    
 }
