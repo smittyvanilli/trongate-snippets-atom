@@ -16,9 +16,9 @@ Create 1-5 snippets Wikis
 ## In Progress
 
 Check for pull requests  
-Work on the 5th five snippets
-Add snippets to the first documentation
-Start Github Wiki
+Work on the 5th five snippets  
+Add snippets to the first documentation  
+Start Github Wiki  
 
 ## Done ✓
 
