@@ -9,9 +9,6 @@ Work on the 5th five Snippets ~12h #repo @smittyvanilli
 Add snippets to the first documentation ~12h #repo @smittyvanilli  
 Check for pull requests ~1h #repo @smittyvanilli  
 Work on the 6th five Snippets ~12h #repo @smittyvanilli  
-Add snippets to the first documentation ~12h #repo @smittyvanilli  
-Check for pull requests ~1h #repo @smittyvanilli  
-Add snippets to the first documentation ~12h #repo @smittyvanilli  
 Start GitHub Wiki
 Create 1-5 snippets Wikis
 
@@ -19,7 +16,7 @@ Create 1-5 snippets Wikis
 ## In Progress
 
 Check for pull requests  
-Work on the 2nd five snippets
+Work on the 5th five snippets
 Add snippets to the first documentation
 Start Github Wiki
 
