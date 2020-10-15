@@ -28,7 +28,7 @@ Add snippets to the first documentation
 ## Done ✓
 
 - [x] Create my first TODO.md  
-- [x] Add readme.html link to stevenmilley.com
+- [x] Add readme.html link to stevenmilley.com  
 - [x] Fix tabs in README.MD
 - [ ] Start Github Wiki
 
@@ -43,7 +43,7 @@ Add snippets to the first documentation
 - [x] Add snippets to the first documentation
 
 ### Third five snippets ✓
-- [x]Check for pull requests  
+- [x] Check for pull requests
 - [x] Work on the 2nd five snippets
 - [x] Add snippets to the first documentation
 
