@@ -193,5 +193,30 @@
     }
 }
 """
-  'description': 'class TimeDate { class statements; )}'
+   'description': 'class TimeDate { class statements; )}'
+
+   'Trongate HTML BASE_URL':
+      'prefix': 'tghbu'
+      'body': '<?= BASE_URL ?>;$0'
+      'description': '<?= BASE_URL ?>'
+
+   'Trongate HTML Flash Data':
+      'prefix': 'tghfd'
+      'body': '<?= flashdata() ?>;$0'
+      'description': '<?= flashdata() ?>'
+
+   'Trongate HTML Variable':
+      'prefix': 'tghv'
+      'body': '<?= $${1:your_variable} ?>;$0'
+      'description': '<?= $your_variable ?> '
+
+   'Trongate HTML Validation Errors':
+      'prefix': 'tghve'
+      'body': '<?= validation_errors(); ?> $0'
+      'description': '<?= validation_errors(); ?> '
+
+   'Trongate Logic Expression':
+      'prefix': 'tgle'
+      'body': '$${1:your_variable} = ${2:your_expression};$0'
+      'description': 'your_variable = your_expression;'
 }
