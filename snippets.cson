@@ -254,4 +254,31 @@
       'description': '''
       function your_function(your_variable1, your_variable2) {\n   Your method code goes here.\n}
       '''
+
+   'Trongate Method (Three Variables Passed)':
+      'prefix': 'tgm3'
+      'body': 'function ${1:your_function}($${2:your_variable1}, $${3:your_variable2}, $${4:your_variable3} ) {\n   ${5:Your method code goes here}\n}$0'
+      'description': '''
+      function your_function(your_variable1, your_variable2, your_variable3) {\n   Your method code goes here.\n}
+      '''
+
+   'Trongate Model Delete Function':
+      'prefix': 'tgmd'
+      'body': "$this->model->delete(id, '${1:tableName}');$0"
+      'description': "$this->model->delete(id, 'tableName');"
+
+   'Trongate Model Get Function (Two Variables Passed)':
+      'prefix': 'tgmg'
+      'body': "$this->model->get('$${1:order_by}', '$${2:target_tbl}');$0"
+      'description': "$this->model->get('order_by', 'target_tbl');"
+
+   'Trongate Model Get Function (Three Variables Passed)':
+      'prefix': 'tgmg3'
+      'body': "$this->model->get('$${1:order_by}', '$${2:target_tbl}', '$${3:limit}');$0"
+      'description': "$this->model->get('order_by', 'target_tbl', 'limit');"
+
+   'Trongate Model Get Function (Four Variables Passed)':
+      'prefix': 'tgmg4'
+      'body': "$this->model->get('$${1:order_by}', '$${2:target_tbl}', '$${3:limit}', '$${4:offset}');$0"
+      'description': "$this->model->get('order_by', 'target_tbl', 'limit', 'offset');"
 }
