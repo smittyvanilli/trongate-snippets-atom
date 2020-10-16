@@ -25,7 +25,7 @@ Start Github Wiki
 -   [x] Create my first TODO.md  
 -   [x] Add readme.html link to stevenmilley.com  
 -   [x] Fix tabs in README.MD
--   [ ] Fix spacing in descriptions
+-   [x] Fix spacing in descriptions
 -   [ ] Start Github Wiki
 
 ### First five snippets ✓

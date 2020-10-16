@@ -12,22 +12,22 @@
 
   'Trongate Class':
     'prefix': 'tgc'
-    'body': """
+    'body': '''
     class ${1:YourClass} extends Trongate {
        ${2:Your code goes here};$0
     }
-    """
-    'description': 'class YourClass extends Trongate \\{ Your code goes here; \\}'
+    '''
+    'description': 'class YourClass extends Trongate {\n Your code goes here;\n}'
 
   'Trongate Config Array Assignment':
       'prefix': 'tgcaa'
-      'body': 'config[$${1:your_variable11}] = $${2:your_variable2};$0'
+      'body': 'config[$${1:your_variable1}] = $${2:your_variable2};$0'
       'description': 'config[$your_variable1] = $your_variable2;'
 
   'Trongate Data Array Assignment':
     'prefix': 'tgda'
-    'body': "$${1:your_arrayName} = '${2:your_function_name}';$0"
-    'description': "$your_arrayName = 'your_function_name';"
+    'body': "$${1:your_array_name} = '${2:your_function_name}';$0"
+    'description': "$your_array_name = 'your_function_name';"
 
   'Trongate Echo Current Url Function':
     'prefix': 'tgecu'
@@ -36,7 +36,7 @@
 
   'Trongate Echo Form Input Function':
     'prefix': 'tgefi'
-    'body': "echo form_input('${1:form_name}');$0"
+    'body': "echo form_input('$${1:form_name}');$0"
     'description': "echo form_input('$form_name');"
 
   'Trongate Echo Form Label Function':
@@ -76,54 +76,54 @@
 
   'Trongate Get Nice Date Class':
     'prefix': 'tggnd'
-    'body': """
-    class TimeDate {
-       function get_nice_date($timestamp, $format) {
-          switch ($format) {
-             case 'full':
-                //FULL //Friday 18th of February 2011 at 10:00:00 AM
-                $the_date = date('l jS \of F Y \a\t h:i:s A', $timestamp);
-                break;
-             case 'cool':
-                //FULL // Friday 18th of February 2011
-                $the_date = date('l jS \of F Y', $timestamp);
-                break;
-             case 'shorter':
-                //SHORTER // 18th of February 2011
-                $the_date = date('jS \of F Y', $time_stamp);
-                break;
-             case 'american':
-                //AMERICAN // February 18th 2011
-                $the_date = date('F jS Y', $timestamp);
-                break;
-             case 'mini':
-                //MINI // 18th Feb 2011
-                $the_date = date('jS M Y'), $timestamp);
-                break;
-             case 'oldschool':
-                //OLDSCHOOL // 18/2/11
-                $the_date = ('j\/n\/y', $timestamp);
-                break;
-             case 'datepicker':
-                //DATEPICKER // 18/2/11
-                $the_date = date('d\/m\/Y'), $timestamp);
-                break;
-             case 'datepicker_us':
-                //DATEPICKER_US // 2/18/11
-                $the_date = date('m\/d\/Y', $timestamp);
-                break;
-             case 'dateandtimepicker':
-                //DATEANDTIMEPICKER // 27th July 2018 - 03:50 pm
-                $the_date = date('d F Y - H:i a', $timestamp);
-                break;
-             case 'monyear':
-                //MONYEAR // 18th Feb 2011
-                $the_date = date('F Y', $timestamp);
-                break;
-          }
+    'body': '''
+     class TimeDate {
+        function get_nice_date($timestamp, $format) {
+           switch ($format) {
+              case 'full':
+                 //FULL //Friday 18th of February 2011 at 10:00:00 AM
+                 $the_date = date('l jS \of F Y \a\t h:i:s A', $timestamp);
+                 break;
+              case 'cool':
+                 //FULL // Friday 18th of February 2011
+                 $the_date = date('l jS \of F Y', $timestamp);
+                 break;
+              case 'shorter':
+                 //SHORTER // 18th of February 2011
+                 $the_date = date('jS \of F Y', $time_stamp);
+                 break;
+              case 'american':
+                 //AMERICAN // February 18th 2011
+                 $the_date = date('F jS Y', $timestamp);
+                 break;
+              case 'mini':
+                 //MINI // 18th Feb 2011
+                 $the_date = date('jS M Y'), $timestamp);
+                 break;
+              case 'oldschool':
+                 //OLDSCHOOL // 18/2/11
+                 $the_date = ('j\/n\/y', $timestamp);
+                 break;
+              case 'datepicker':
+                 //DATEPICKER // 18/2/11
+                 $the_date = date('d\/m\/Y'), $timestamp);
+                 break;
+              case 'datepicker_us':
+                 //DATEPICKER_US // 2/18/11
+                 $the_date = date('m\/d\/Y', $timestamp);
+                 break;
+              case 'dateandtimepicker':
+                 //DATEANDTIMEPICKER // 27th July 2018 - 03:50 pm
+                 $the_date = date('d F Y - H:i a', $timestamp);
+                 break;
+              case 'monyear':
+                 //MONYEAR // 18th Feb 2011
+                 $the_date = date('F Y', $timestamp);
+                 break;
+              }
 
-          return $the_date;
-       }
+             return $the_date;
+          }
 
        function _is_datepicker_valid($datepicker) {
           $datepicker_less_slashes = str_replace('/' '', $datepicker);
@@ -149,51 +149,51 @@
          return $nice_date;
          }
 
-      function make_timestamp_from_datepicker($datepicker) {
-        $hour = 7;
-        $minute = 0;
-        $second = 0;
+         function make_timestamp_from_datepicker($datepicker) {
+           $hour = 7;
+           $minute = 0;
+           $second = 0;
 
-        $day = substr($datepicker, 0, 2);
-        $month = substr($datepicker, 3, 2);
-        $year = substr($datepicker, 6, 4);
-        $timestamp = mktime($hour, $minute, $month, $day, $year);
+           $day = substr($datepicker, 0, 2);
+           $month = substr($datepicker, 3, 2);
+           $year = substr($datepicker, 6, 4);
+           $timestamp = mktime($hour, $minute, $month, $day, $year);
 
-        return $timestamp;
-    }
+           return $timestamp;
+       }
 
-    function make_timestamp_from_dateandtimepicker($dateandtimepicker) {
-        $dateandtimepicker = str_replace('-', '', $dateandtimepicker);
-        $timestamp = strtotime($dateandtimepicker);
+       function make_timestamp_from_dateandtimepicker($dateandtimepicker) {
+           $dateandtimepicker = str_replace('-', '', $dateandtimepicker);
+           $timestamp = strtotime($dateandtimepicker);
 
-        return $timestamp;
-    }
+           return $timestamp;
+       }
 
-    function make_timestamp_from_datepicker_us($datepicker) {
-        $hour = 7;
-        $minute = 0;
-        $second = 0;
+       function make_timestamp_from_datepicker_us($datepicker) {
+           $hour = 7;
+           $minute = 0;
+           $second = 0;
 
-        $month = substr($datepicker, 0 ,2);
-        $day = substr($datepicker, 3, 2);
-        $year = substr($datepicker, 6, 4);
+           $month = substr($datepicker, 0 ,2);
+           $day = substr($datepicker, 3, 2);
+           $year = substr($datepicker, 6, 4);
 
-        $timestamp = mktime($hour, $minute, $second, $month, $day, $year);
+           $timestamp = mktime($hour, $minute, $second, $month, $day, $year);
 
-        return $timestamp;
-    }
+           return $timestamp;
+       }
 
-    function make_timestamp($day, $month, $year) {
-        $hour = 7;
-        $minute = 0;
-        $second = 0;
-        $timestamp = mktime($hour, $minute, $second, $month, $day, $year);
+       function make_timestamp($day, $month, $year) {
+           $hour = 7;
+           $minute = 0;
+           $second = 0;
+           $timestamp = mktime($hour, $minute, $second, $month, $day, $year);
 
-        return $timestamp;
-    }
-}
-"""
-   'description': 'class TimeDate { class statements; )}'
+           return $timestamp;
+       }
+   }
+   '''
+   'description': 'class TimeDate { class statements; }'
 
    'Trongate HTML BASE_URL':
       'prefix': 'tghbu'
@@ -224,7 +224,7 @@
       'prefix': 'tglie'
       'body': 'if (${1:condition}) {\n   ${2:if-statmements}\n}\nelse {\n   ${3:else-statments}\n}$0'
       'description': '''
-      if (condition) {\n if-statements;\n }\n else {\n else-statements;\n }
+      if (condition) {\n   if-statements;\n }\n else {\n   else-statements;\n }
       '''
 
    'Trongate Logic If ElseIf':
