@@ -219,4 +219,39 @@
       'prefix': 'tgle'
       'body': '$${1:your_variable} = ${2:your_expression};$0'
       'description': 'your_variable = your_expression;'
+
+   'Trongate Logic If Else':
+      'prefix': 'tglie'
+      'body': 'if (${1:condition}) {\n   ${2:if-statmements}\n}\nelse {\n   ${3:else-statments}\n}$0'
+      'description': '''
+      if (condition) {\n if-statements;\n }\n else {\n else-statements;\n }
+      '''
+
+   'Trongate Logic If ElseIf':
+      'prefix': 'tglei'
+      'body': 'if (${1:condition}) {\n   ${2:if-statements};\n elseif (${3:elseif-condition}) {\n   ${4:elseif-statements};\n else {\n   ${5:else-statements};$0'
+      'description': '''
+      if (condition) {\n   if-statements;\n}    elseif (elseif-condition) {\n    elseif-statements;\n} else {\n   else-statements;\n}
+      '''
+
+   'Trongate Method (No Variables Passed)':
+      'prefix': 'tgm'
+      'body': 'function ${1:your_function}() {\n   ${2:Your method code goes here}\n}$0'
+      'description': '''
+      function your_function() {\n   Your method code goes here.\n}
+      '''
+
+   'Trongate Method (One Variable Passed)':
+      'prefix': 'tgm1'
+      'body': 'function ${1:your_function}($${2:your_variable}) {\n   ${3:Your method code goes here}\n}$0'
+      'description': '''
+      function your_function(your_variable) {\n   Your method code goes here.\n}
+      '''
+
+   'Trongate Method (Two Variables Passed)':
+      'prefix': 'tgm2'
+      'body': 'function ${1:your_function}($${2:your_variable1}, $${3:your_variable2} ) {\n   ${4:Your method code goes here}\n}$0'
+      'description': '''
+      function your_function(your_variable1, your_variable2) {\n   Your method code goes here.\n}
+      '''
 }
